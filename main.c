@@ -34,8 +34,8 @@ void eliminarRegistro(struct Funcionario funcionario[], int id_funcionario, int 
             funcionario[i] = funcionario[i+1];
         }
         printf("O funcionário foi deletado do sistema.");
+        (*numFuncionarios)--;
     }
-    (*numFuncionarios)--;
 }
 
 void alterarRegistro(struct Funcionario funcionario[], int id_funcionario, int *numFuncionarios)
